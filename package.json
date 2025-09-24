@@ -1,0 +1,24 @@
+{
+  "name": "unit-testing-assignment",
+  "version": "1.0.0",
+  "description": "Unit testing practice using Mocha and Chai on mylib.js functions.",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "mocha test/*.js"
+  },
+  "keywords": [
+    "mocha",
+    "chai",
+    "unit-testing",
+    "assignment"
+  ],
+  "author": "Abhishek Adhikari",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^6.0.1",
+    "mocha": "^11.7.2"
+  },
+  "directories": {
+    "test": "test"
+  }
+}
