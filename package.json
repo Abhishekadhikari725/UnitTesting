@@ -13,7 +13,7 @@
     "assignment"
   ],
   "author": "Abhishek Adhikari",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
     "chai": "^6.0.1",
     "mocha": "^11.7.2"
