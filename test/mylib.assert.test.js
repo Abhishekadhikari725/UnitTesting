@@ -1,5 +1,5 @@
 const assert = require("chai").assert;
-const { add, subtract, multiply, divide } = require("../src/mylib");
+const { add, subtract, multiply, divide, square, cube, sqrt, cbrt } = require("../src/mylib");
 
 describe("mylib.js (assert)", () => {
   describe("add()", () => {
@@ -31,6 +31,35 @@ describe("mylib.js (assert)", () => {
 
     it("should throw error when dividing by zero", () => {
       assert.throws(() => divide(10, 0), "Division by zero");
+    });
+  });
+
+  // New math function tests
+  describe("square()", () => {
+    it("should return square of a number", () => {
+      assert.equal(square(4), 16);
+    });
+  });
+
+  describe("cube()", () => {
+    it("should return cube of a number", () => {
+      assert.equal(cube(3), 27);
+    });
+  });
+
+  describe("sqrt()", () => {
+    it("should return square root of a number", () => {
+      assert.equal(sqrt(16), 4);
+    });
+
+    it("should throw error for negative number", () => {
+      assert.throws(() => sqrt(-9), "Input must be a non-negative number");
+    });
+  });
+
+  describe("cbrt()", () => {
+    it("should return cube root of a number", () => {
+      assert.equal(cbrt(27), 3);
     });
   });
 });
