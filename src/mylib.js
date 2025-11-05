@@ -28,6 +28,27 @@ function divide(a, b) {
     }
     return a / b;
 }
-  
-module.exports = { add, subtract, multiply, divide };
+
+// New features added below
+function square(a) {
+  if (typeof a !== "number") throw new Error("Input must be a number");
+  return a * a;
+}
+
+function cube(a) {
+  if (typeof a !== "number") throw new Error("Input must be a number");
+  return a * a * a;
+}
+
+function sqrt(a) {
+  if (typeof a !== "number" || a < 0) throw new Error("Input must be a non-negative number");
+  return Math.sqrt(a);
+}
+
+function cbrt(a) {
+  if (typeof a !== "number") throw new Error("Input must be a number");
+  return Math.cbrt(a);
+}
+
+module.exports = { add, subtract, multiply, divide, square, cube, sqrt, cbrt };
   
